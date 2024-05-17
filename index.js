@@ -10,7 +10,7 @@ app.use(cors())
 
 app.get('/image', async (req, res) => {
   try {
-    const response = await fetch('https://humble-train-wr97r45wx69j3gr7r-3000.app.github.dev/image');
+    const response = await fetch('https://api.unsplash.com/photos/?client_id=o3JmzdvQRPXVOkPQLfSUY8Z_zAGnCmnHGjVtTImGClI');
     if (response.ok) {
       const data = await response.json();
 
